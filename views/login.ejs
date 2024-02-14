@@ -13,7 +13,12 @@
     <div class="container login-auth">
         <div class="row form-row">
             <h1 class="mb-3 mt-5">Log In</h1>
-            <form class="form_login" action="/login" method="post">
+            <form class="form_login" action="/login" method="POST">
+                <% if(messages.error){ %>
+                    <div class="alert alert-danger mt-5">
+                        <strong><%= messages.error %></strong>
+                    </div>
+                    <% } %>
                 <div class="col-md-12">
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" placeholder="Email address" name="email" required>
