@@ -9,13 +9,13 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <style>
     #footer {
-    display: flex;
-    width: 100%;
-    height: 5.2rem;
-    background-color: rgb(137, 43, 226);
-    color: #fff;
-    align-items: center;
-    justify-content: center;
+      display: flex;
+      width: 100%;
+      height: 5.2rem;
+      background-color: rgb(137, 43, 226);
+      color: #fff;
+      align-items: center;
+      justify-content: center;
       /* Footer height */
     }
   </style>
@@ -55,7 +55,9 @@
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
-          <button type="button" class="btn btn-outline-primary m-lg-2">Logout</button>
+          <form action="/logout?_method=DELETE" method="POST">
+            <button type="submit" class="btn btn-outline-primary m-lg-2">Logout</button>
+          </form>
         </div>
       </div>
     </nav>
